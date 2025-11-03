@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spartan Gym — Força, Disciplina e Resultado</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-mark">SG</div>
+        <div class="logo-text">Spartan Gym</div>
+      </div>
+      <nav class="main-nav">
+        <a href="#planos">Planos</a>
+        <a href="#aulas">Aulas</a>
+        <a href="#personal">Personal</a>
+        <a href="#loja">Loja</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato" class="btn-outline">Contato</a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>Spartan Gym</h1>
+        <p class="tagline">Força, disciplina e resultados — treino personalizado em um espaço premium.</p>
+        <ul class="features-hero">
+          <li>Personal trainers certificados</li>
+          <li>Aulas de natação, pilates e fit dance</li>
+          <li>Espaço para venda de produtos de terceiros</li>
+        </ul>
+        <div class="cta-row">
+          <a href="#planos" class="btn-primary">Ver Planos</a>
+          <a href="#contato" class="btn-ghost">Agende uma visita</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <img src="assets/hero-1.jpg" alt="Pessoa correndo na esteira" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="planos" class="section">
+      <div class="container">
+        <h2>Planos</h2>
+        <p class="section-lead">Escolha o plano que combina com seu objetivo. Transparência total nos valores.</p>
+
+        <div class="plans-grid">
+          <article class="plan-card">
+            <div class="plan-badge">BÁSICO</div>
+            <h3>Plano Básico</h3>
+            <p class="price">R$ 100 / mês</p>
+            <ul>
+              <li>Acesso à academia</li>
+              <li>Direito a personal</li>
+              <li>Treino individualizado</li>
+            </ul>
+            <a class="btn-primary" href="#contato">Assinar</a>
+          </article>
+
+          <article class="plan-card featured">
+            <div class="plan-badge">INTERMEDIÁRIO</div>
+            <h3>Plano Intermediário</h3>
+            <p class="price">R$ 175 / mês</p>
+            <ul>
+              <li>Tudo do Básico</li>
+              <li>+ 1 aula especial (Pilates ou Fit-dance)</li>
+              <li>Acompanhamento online</li>
+            </ul>
+            <a class="btn-primary" href="#contato">Assinar</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge">PREMIUM</div>
+            <h3>Plano Premium</h3>
+            <p class="price">R$ 300 / mês</p>
+            <ul>
+              <li>Tudo do Intermediário</li>
+              <li>Nutricionista com dieta personalizada</li>
+              <li>Acesso a todas as aulas especiais</li>
+            </ul>
+            <a class="btn-primary" href="#contato">Assinar</a>
+          </article>
+        </div>
+
+        <div class="special-pricing">
+          <h4>Aulas especiais (avulso)</h4>
+          <div class="special-list">
+            <div class="item">Pilates — R$ 100</div>
+            <div class="item">Fit-dance — R$ 100</div>
+            <div class="item">Natação — R$ 170</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aulas" class="section section-dark">
+      <div class="container">
+        <h2>Aulas Especiais</h2>
+        <p class="section-lead">Programas guiados com instrutores especializados.</p>
+
+        <div class="classes-grid">
+          <article class="class-card">
+            <img src="assets/natacao.jpg" alt="Natação" />
+            <h3>Natação</h3>
+            <p>Aulas para todos os níveis com técnica e condicionamento. (R$ 170 por sessão avulsa)</p>
+            <a class="btn-ghost" href="#contato">Inscreva-se</a>
+          </article>
+
+          <article class="class-card">
+            <img src="assets/pilates.jpg" alt="Pilates" />
+            <h3>Pilates</h3>
+            <p>Foco em postura, força e prevenção de lesões. (R$ 100 por sessão avulsa)</p>
+            <a class="btn-ghost" href="#contato">Inscreva-se</a>
+          </article>
+
+          <article class="class-card">
+            <img src="assets/fitdance.jpg" alt="Fit Dance" />
+            <h3>Fit Dance</h3>
+            <p>Aula dinâmica para queimar calorias e melhorar coordenação. (R$ 100 por sessão avulsa)</p>
+            <a class="btn-ghost" href="#contato">Inscreva-se</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="personal" class="section">
+      <div class="container">
+        <h2>Personal Trainers</h2>
+        <p class="section-lead">Acompanhamento personalizado para acelerar seus resultados com segurança.</p>
+
+        <div class="trainers-grid">
+          <article class="trainer-card">
+            <img src="assets/trainer-1.jpg" alt="Personal 1" />
+            <h3>Lucas Rocha</h3>
+            <p>Especialista em força e hipertrofia. Avaliação física e periodização de treinos.</p>
+          </article>
+
+          <article class="trainer-card">
+            <img src="assets/trainer-2.jpg" alt="Personal 2" />
+            <h3>Ana Paula</h3>
+            <p>Treinos funcionais, reabilitação e prevenção de lesões.</p>
+          </article>
+
+          <article class="trainer-card">
+            <img src="assets/trainer-3.jpg" alt="Personal 3" />
+            <h3>Rafael Mendes</h3>
+            <p>Performance esportiva e preparação física especializada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="loja" class="section section-dark">
+      <div class="container">
+        <h2>Ponto de Venda</h2>
+        <p class="section-lead">Produtos selecionados por parceiros — suplementos, acessórios e roupas.</p>
+
+        <div class="shop-grid">
+          <article class="product">
+            <img src="assets/product-1.jpg" alt="Produto 1" />
+            <h4>Creatina Premium</h4>
+            <p>Suplemento para força e recuperação.</p>
+            <p class="prod-price">R$ 129,90</p>
+            <a class="btn-ghost" href="#contato">Comprar / Reservar</a>
+          </article>
+
+          <article class="product">
+            <img src="assets/product-2.jpg" alt="Produto 2" />
+            <h4>Short Spartan</h4>
+            <p>Roupa esportiva com tecnologia de ventilação.</p>
+            <p class="prod-price">R$ 89,90</p>
+            <a class="btn-ghost" href="#contato">Comprar / Reservar</a>
+          </article>
+
+          <article class="product">
+            <img src="assets/product-3.jpg" alt="Produto 3" />
+            <h4>Garrafa Térmica</h4>
+            <p>Manter-se hidratado em grande estilo.</p>
+            <p class="prod-price">R$ 49,90</p>
+            <a class="btn-ghost" href="#contato">Comprar / Reservar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao" class="section">
+      <div class="container location-grid">
+        <div class="location-info">
+          <h2>Localização</h2>
+          <p>Rua Fernandes Campelo Araújo - João Aranha – SP</p>
+          <p class="opening">Unidade em ponto alugado — venha fazer uma visita e conhecer as instalações.</p>
+          <ul class="contact-mini">
+            <li>Horário: Seg-Sex 05:00 - 23:00 | Sáb 07:00 - 14:00</li>
+            <li>Telefone: (19) 99999-9999</li>
+            <li>Email: contato@spartangym.com</li>
+          </ul>
+        </div>
+        <div class="map-placeholder">
+          <img src="assets/map-placeholder.png" alt="Mapa - Rua Fernandes Campelo Araújo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section section-dark">
+      <div class="container">
+        <h2>Contato e Agendamento</h2>
+        <p class="section-lead">Marque uma visita, agende uma aula experimental ou peça mais informações.</p>
+
+        <div class="contact-grid">
+          <form class="contact-form" id="contactForm">
+            <label>Nome
+              <input type="text" name="name" required />
+            </label>
+            <label>Email
+              <input type="email" name="email" required />
+            </label>
+            <label>Mensagem
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <div class="form-row">
+              <button type="submit" class="btn-primary">Enviar</button>
+              <button type="button" class="btn-ghost" onclick="bookVisit()">Agendar Visita</button>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <h4>Atendimento</h4>
+            <p>Telefone: (19) 99999-9999</p>
+            <p>Email: contato@spartangym.com</p>
+            <h4>Redes</h4>
+            <div class="socials">
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="Facebook">FB</a>
+              <a href="#" aria-label="WhatsApp">WA</a>
+            </div>
+            <h4>Horários</h4>
+            <p>Seg-Sex 05:00 - 23:00 | Sáb 07:00 - 14:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Spartan Gym — Todos os direitos reservados.</div>
+        <nav class="footer-nav">
+          <a href="#planos">Planos</a>
+          <a href="#aulas">Aulas</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+/* Reset e variáveis de tema */
+:root{
+  --bg:#0b0b0c;          /* preto profundo */
+  --card:#0f0f10;
+  --accent:#7b3cff;      /* roxo vibrante */
+  --accent-2:#5e1bd8;    /* roxo secundário */
+  --muted:#bfc4d6;
+  --white:#ffffff;
+  --glass: rgba(255,255,255,0.04);
+  --radius:12px;
+  --container:1200px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg) 0%, #040405 100%);
+  color:var(--muted);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+/* Container */
+.container{max-width:var(--container);margin:0 auto;padding:2rem}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg, rgba(11,11,12,0.6), transparent);backdrop-filter: blur(6px);border-bottom:1px solid rgba(255,255,255,0.03)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.logo{display:flex;align-items:center;gap:.8rem}
+.logo-mark{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700;font-family:'Oswald',sans-serif}
+.logo-text{font-weight:700;color:var(--white);letter-spacing:.6px}
+.main-nav{display:flex;gap:1rem;align-items:center}
+.main-nav a{color:var(--muted);Text-decoration:none;padding:.5rem .6rem;border-radius:8px}
+.main-nav a:hover{color:var(--white);background:var(--glass)}
+.mobile-menu-toggle{display:none;background:none;border:0;color:var(--white);font-size:1.4rem}
+
+/* Hero */
+.hero{padding:4rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 480px;gap:2rem;align-items:center}
+.hero-content h1{font-family:'Oswald',sans-serif;font-size:3.2rem;color:var(--white);margin:.2rem 0}
+.tagline{color:var(--muted);margin-bottom:1rem}
+.features-hero{display:flex;gap:1rem;list-style:none;padding:0;margin:1rem 0 1.6rem 0}
+.features-hero li{background:rgba(255,255,255,0.03);padding:.6rem 1rem;border-radius:999px;color:var(--muted);font-weight:600;font-size:.95rem}
+.cta-row{display:flex;gap:1rem}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:var(--white);padding:.9rem 1.2rem;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 8px 30px rgba(123,60,255,0.12)}
+.btn-ghost{border:1px solid rgba(255,255,255,0.06);color:var(--white);padding:.7rem 1rem;border-radius:8px;text-decoration:none}
+.btn-outline{border:1px solid rgba(255,255,255,0.08);padding:.5rem .9rem;border-radius:8px;color:var(--white);text-decoration:none}
+
+/* hero visual */
+.hero-visual{display:flex;justify-content:center}
+.hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:16px;padding:8px;box-shadow:0 30px 60px rgba(0,0,0,0.6)}
+.hero-card img{width:100%;height:100%;max-height:420px;object-fit:cover;border-radius:10px;display:block}
+
+/* Sections */
+.section{padding:4rem 0}
+.section-dark{background:linear-gradient(180deg, rgba(8,8,9,0.6), rgba(6,6,7,0.8));border-top:1px solid rgba(255,255,255,0.02)}
+.section h2{color:var(--white);font-family:'Oswald',sans-serif;margin-bottom:.6rem}
+.section-lead{color:var(--muted);margin-bottom:1.4rem}
+
+/* Plans */
+.plans-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.plan-card{background:var(--card);padding:1.6rem;border-radius:14px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 18px 40px rgba(0,0,0,0.6)}
+.plan-card.featured{transform:translateY(-10px);border:1px solid rgba(123,60,255,0.18);box-shadow:0 24px 50px rgba(123,60,255,0.06)}
+.plan-badge{background:rgba(255,255,255,0.04);display:inline-block;padding:.4rem .7rem;border-radius:999px;color:var(--muted);font-weight:700;margin-bottom:.6rem}
+.price{font-size:1.6rem;color:var(--white);font-weight:800;margin:.6rem 0}
+
+/* Specials */
+.special-pricing{margin-top:1.4rem;background:linear-gradient(90deg, rgba(123,60,255,0.03), rgba(94,27,216,0.02));padding:1rem;border-radius:10px}
+.special-list{display:flex;gap:1rem;margin-top:.6rem}
+.special-list .item{background:rgba(255,255,255,0.03);padding:.6rem .8rem;border-radius:8px;color:var(--muted)}
+
+/* Classes */
+.classes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.class-card{background:var(--card);border-radius:12px;padding:0;overflow:hidden;color:var(--muted)}
+.class-card img{width:100%;height:180px;object-fit:cover;display:block}
+.class-card h3{color:var(--white);margin:1rem}
+.class-card p{padding:0 1rem 1rem 1rem}
+
+/* Trainers */
+.trainers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.trainer-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:1rem;border-radius:12px;text-align:center}
+.trainer-card img{width:100%;height:200px;object-fit:cover;border-radius:8px;display:block;margin-bottom:.8rem}
+.trainer-card h3{color:var(--white);margin-bottom:.3rem}
+
+/* Shop */
+.shop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.product img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:.6rem}
+.prod-price{color:var(--white);font-weight:700}
+
+/* Location */
+.location-grid{display:grid;grid-template-columns:1fr 420px;gap:1.6rem;align-items:center}
+.map-placeholder img{width:100%;border-radius:12px;display:block}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 360px;gap:1.4rem}
+.contact-form{background:var(--card);padding:1rem;border-radius:12px}
+.contact-form label{display:block;color:var(--muted);font-weight:600;margin-bottom:.8rem}
+.contact-form input,.contact-form textarea{width:100%;padding:.7rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)}
+.form-row{display:flex;gap:.8rem;margin-top:.8rem}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:1.2rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;color:var(--muted)}
+
+/* Responsividade */
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr}
+  .plans-grid,.classes-grid,.trainers-grid,.shop-grid{grid-template-columns:repeat(2,1fr)}
+  .mobile-menu-toggle{display:block}
+  .main-nav{display:none}
+}
+@media (max-width:680px){
+  .plans-grid,.classes-grid,.trainers-grid,.shop-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .location-grid{grid-template-columns:1fr}
+  .hero-content h1{font-size:2.2rem}
+}
+// Interações simples: formulário, ano dinâmico e ações de menu
+document.addEventListener('DOMContentLoaded', function(){
+  // Ano do rodapé
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Simples submit: mostrar alerta (substituir por integração real)
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = form.elements['name'].value;
+    alert('Obrigado, ' + name + '! Sua mensagem foi enviada. Entraremos em contato em breve.');
+    form.reset();
+  });
+
+  // Mobile menu toggle
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const nav = document.querySelector('.main-nav');
+  toggle && toggle.addEventListener('click', () => {
+    if(nav.style.display === 'flex') nav.style.display = 'none';
+    else nav.style.display = 'flex';
+  });
+});
+
+// Função auxiliar para agendar visita (exibir modal ou redirecionar)
+function bookVisit(){
+  alert('Obrigado! Nossa equipe entrará em contato para confirmar sua visita.');
+}
+```markdown
+# Spartan Gym — Site estático
+
+Arquivos incluídos:
+- index.html
+- styles.css
+- script.js
+- assets/
+  - hero-1.jpg   (imagem 3 - esteira)
+  - natacao.jpg  (imagem 2 - natação)
+  - product-1.jpg (imagem 1 - suplemento)
+  - map-placeholder.png (imagem genérica de mapa)
+- robots.txt
+- CNAME
+
+Como usar:
+1. Coloque as imagens enviadas na pasta `assets/` com os nomes indicados acima.
+2. Abra `index.html` no navegador para testar localmente.
+3. Para publicar: suba todos os arquivos para GitHub Pages, Netlify, Vercel, ou outro host estático.
+   - GitHub Pages: crie um repositório, faça commit dos arquivos e ative Pages.
+   - Netlify/Vercel: arraste a pasta para fazer o deploy ou conecte ao repositório.
+4. Integrações recomendadas:
+   - Substituir o `alert()` do formulário por uma chamada ao seu backend (/api/contact) ou usar um serviço como Formspree/Zapier.
+   - Integrar Google Maps na seção de localização (substituir map-placeholder.png por iframe).
+   - Para vendas, integrar Stripe/PagSeguro ou criar páginas de produto com checkout.
+
+Contato usado no site:
+- Telefone: (19) 99999-9999
+- Email: contato@spartangym.com
+
+Se quiser, eu posso:
+- Gerar o arquivo ZIP com tudo pronto (você fará o download) — eu preparo o ZIP e disponibilizo no próximo passo.
+- Converter para um template React/Next.js ou WordPress.
+- Integrar formulário com um endpoint real ou com WhatsApp click-to-chat.
+```
+#!/usr/bin/env bash
+set -e
+
+# Pasta de trabalho
+WORKDIR="spartangym_build"
+DISTDIR="dist"
+ZIPNAME="spartangym-site.zip"
+
+# Limpa builds anteriores
+rm -rf "$WORKDIR" "$DISTDIR"
+mkdir -p "$WORKDIR/assets" "$DISTDIR"
+
+# Criar arquivos
+cat > "$WORKDIR/index.html" <<'HTML'
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spartan Gym — Força, Disciplina e Resultado</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-mark">SG</div>
+        <div class="logo-text">Spartan Gym</div>
+      </div>
+      <nav class="main-nav">
+        <a href="#planos">Planos</a>
+        <a href="#aulas">Aulas</a>
+        <a href="#personal">Personal</a>
+        <a href="#loja">Loja</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#contato" class="btn-outline">Contato</a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>Spartan Gym</h1>
+        <p class="tagline">Força, disciplina e resultados — treino personalizado em um espaço premium.</p>
+        <ul class="features-hero">
+          <li>Personal trainers certificados</li>
+          <li>Aulas de natação, pilates e fit dance</li>
+          <li>Espaço para venda de produtos de terceiros</li>
+        </ul>
+        <div class="cta-row">
+          <a href="#planos" class="btn-primary">Ver Planos</a>
+          <a href="#contato" class="btn-ghost">Agende uma visita</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <img src="assets/hero-1.jpg" alt="Pessoa correndo na esteira" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="planos" class="section">
+      <div class="container">
+        <h2>Planos</h2>
+        <p class="section-lead">Escolha o plano que combina com seu objetivo. Transparência total nos valores.</p>
+
+        <div class="plans-grid">
+          <article class="plan-card">
+            <div class="plan-badge">BÁSICO</div>
+            <h3>Plano Básico</h3>
+            <p class="price">R$ 100 / mês</p>
+            <ul>
+              <li>Acesso à academia</li>
+              <li>Direito a personal</li>
+              <li>Treino individualizado</li>
+            </ul>
+            <a class="btn-primary" href="#contato">Assinar</a>
+          </article>
+
+          <article class="plan-card featured">
+            <div class="plan-badge">INTERMEDIÁRIO</div>
+            <h3>Plano Intermediário</h3>
+            <p class="price">R$ 175 / mês</p>
+            <ul>
+              <li>Tudo do Básico</li>
+              <li>+ 1 aula especial (Pilates ou Fit-dance)</li>
+              <li>Acompanhamento online</li>
+            </ul>
+            <a class="btn-primary" href="#contato">Assinar</a>
+          </article>
+
+          <article class="plan-card">
+            <div class="plan-badge">PREMIUM</div>
+            <h3>Plano Premium</h3>
+            <p class="price">R$ 300 / mês</p>
+            <ul>
+              <li>Tudo do Intermediário</li>
+              <li>Nutricionista com dieta personalizada</li>
+              <li>Acesso a todas as aulas especiais</li>
+            </ul>
+            <a class="btn-primary" href="#contato">Assinar</a>
+          </article>
+        </div>
+
+        <div class="special-pricing">
+          <h4>Aulas especiais (avulso)</h4>
+          <div class="special-list">
+            <div class="item">Pilates — R$ 100</div>
+            <div class="item">Fit-dance — R$ 100</div>
+            <div class="item">Natação — R$ 170</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aulas" class="section section-dark">
+      <div class="container">
+        <h2>Aulas Especiais</h2>
+        <p class="section-lead">Programas guiados com instrutores especializados.</p>
+
+        <div class="classes-grid">
+          <article class="class-card">
+            <img src="assets/natacao.jpg" alt="Natação" />
+            <h3>Natação</h3>
+            <p>Aulas para todos os níveis com técnica e condicionamento. (R$ 170 por sessão avulsa)</p>
+            <a class="btn-ghost" href="#contato">Inscreva-se</a>
+          </article>
+
+          <article class="class-card">
+            <img src="assets/pilates.jpg" alt="Pilates" />
+            <h3>Pilates</h3>
+            <p>Foco em postura, força e prevenção de lesões. (R$ 100 por sessão avulsa)</p>
+            <a class="btn-ghost" href="#contato">Inscreva-se</a>
+          </article>
+
+          <article class="class-card">
+            <img src="assets/fitdance.jpg" alt="Fit Dance" />
+            <h3>Fit Dance</h3>
+            <p>Aula dinâmica para queimar calorias e melhorar coordenação. (R$ 100 por sessão avulsa)</p>
+            <a class="btn-ghost" href="#contato">Inscreva-se</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="personal" class="section">
+      <div class="container">
+        <h2>Personal Trainers</h2>
+        <p class="section-lead">Acompanhamento personalizado para acelerar seus resultados com segurança.</p>
+
+        <div class="trainers-grid">
+          <article class="trainer-card">
+            <img src="assets/trainer-1.jpg" alt="Personal 1" />
+            <h3>Lucas Rocha</h3>
+            <p>Especialista em força e hipertrofia. Avaliação física e periodização de treinos.</p>
+          </article>
+
+          <article class="trainer-card">
+            <img src="assets/trainer-2.jpg" alt="Personal 2" />
+            <h3>Ana Paula</h3>
+            <p>Treinos funcionais, reabilitação e prevenção de lesões.</p>
+          </article>
+
+          <article class="trainer-card">
+            <img src="assets/trainer-3.jpg" alt="Personal 3" />
+            <h3>Rafael Mendes</h3>
+            <p>Performance esportiva e preparação física especializada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="loja" class="section section-dark">
+      <div class="container">
+        <h2>Ponto de Venda</h2>
+        <p class="section-lead">Produtos selecionados por parceiros — suplementos, acessórios e roupas.</p>
+
+        <div class="shop-grid">
+          <article class="product">
+            <img src="assets/product-1.jpg" alt="Produto 1" />
+            <h4>Creatina Premium</h4>
+            <p>Suplemento para força e recuperação.</p>
+            <p class="prod-price">R$ 129,90</p>
+            <a class="btn-ghost" href="#contato">Comprar / Reservar</a>
+          </article>
+
+          <article class="product">
+            <img src="assets/product-2.jpg" alt="Produto 2" />
+            <h4>Short Spartan</h4>
+            <p>Roupa esportiva com tecnologia de ventilação.</p>
+            <p class="prod-price">R$ 89,90</p>
+            <a class="btn-ghost" href="#contato">Comprar / Reservar</a>
+          </article>
+
+          <article class="product">
+            <img src="assets/product-3.jpg" alt="Produto 3" />
+            <h4>Garrafa Térmica</h4>
+            <p>Manter-se hidratado em grande estilo.</p>
+            <p class="prod-price">R$ 49,90</p>
+            <a class="btn-ghost" href="#contato">Comprar / Reservar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao" class="section">
+      <div class="container location-grid">
+        <div class="location-info">
+          <h2>Localização</h2>
+          <p>Rua Fernandes Campelo Araújo - João Aranha – SP</p>
+          <p class="opening">Unidade em ponto alugado — venha fazer uma visita e conhecer as instalações.</p>
+          <ul class="contact-mini">
+            <li>Horário: Seg-Sex 05:00 - 23:00 | Sáb 07:00 - 14:00</li>
+            <li>Telefone: (19) 99999-9999</li>
+            <li>Email: contato@spartangym.com</li>
+          </ul>
+        </div>
+        <div class="map-placeholder">
+          <img src="assets/map-placeholder.png" alt="Mapa - Rua Fernandes Campelo Araújo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section section-dark">
+      <div class="container">
+        <h2>Contato e Agendamento</h2>
+        <p class="section-lead">Marque uma visita, agende uma aula experimental ou peça mais informações.</p>
+
+        <div class="contact-grid">
+          <form class="contact-form" id="contactForm">
+            <label>Nome
+              <input type="text" name="name" required />
+            </label>
+            <label>Email
+              <input type="email" name="email" required />
+            </label>
+            <label>Mensagem
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <div class="form-row">
+              <button type="submit" class="btn-primary">Enviar</button>
+              <button type="button" class="btn-ghost" onclick="bookVisit()">Agendar Visita</button>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <h4>Atendimento</h4>
+            <p>Telefone: (19) 99999-9999</p>
+            <p>Email: contato@spartangym.com</p>
+            <h4>Redes</h4>
+            <div class="socials">
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="Facebook">FB</a>
+              <a href="#" aria-label="WhatsApp">WA</a>
+            </div>
+            <h4>Horários</h4>
+            <p>Seg-Sex 05:00 - 23:00 | Sáb 07:00 - 14:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year"></span> Spartan Gym — Todos os direitos reservados.</div>
+        <nav class="footer-nav">
+          <a href="#planos">Planos</a>
+          <a href="#aulas">Aulas</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+HTML
+
+cat > "$WORKDIR/styles.css" <<'CSS'
+/* Reset e variáveis de tema */
+:root{
+  --bg:#0b0b0c;          /* preto profundo */
+  --card:#0f0f10;
+  --accent:#7b3cff;      /* roxo vibrante */
+  --accent-2:#5e1bd8;    /* roxo secundário */
+  --muted:#bfc4d6;
+  --white:#ffffff;
+  --glass: rgba(255,255,255,0.04);
+  --radius:12px;
+  --container:1200px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg) 0%, #040405 100%);
+  color:var(--muted);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+/* Container */
+.container{max-width:var(--container);margin:0 auto;padding:2rem}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg, rgba(11,11,12,0.6), transparent);backdrop-filter: blur(6px);border-bottom:1px solid rgba(255,255,255,0.03)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.logo{display:flex;align-items:center;gap:.8rem}
+.logo-mark{width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700;font-family:'Oswald',sans-serif}
+.logo-text{font-weight:700;color:var(--white);letter-spacing:.6px}
+.main-nav{display:flex;gap:1rem;align-items:center}
+.main-nav a{color:var(--muted);text-decoration:none;padding:.5rem .6rem;border-radius:8px}
+.main-nav a:hover{color:var(--white);background:var(--glass)}
+.mobile-menu-toggle{display:none;background:none;border:0;color:var(--white);font-size:1.4rem}
+
+/* Hero */
+.hero{padding:4rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 480px;gap:2rem;align-items:center}
+.hero-content h1{font-family:'Oswald',sans-serif;font-size:3.2rem;color:var(--white);margin:.2rem 0}
+.tagline{color:var(--muted);margin-bottom:1rem}
+.features-hero{display:flex;gap:1rem;list-style:none;padding:0;margin:1rem 0 1.6rem 0}
+.features-hero li{background:rgba(255,255,255,0.03);padding:.6rem 1rem;border-radius:999px;color:var(--muted);font-weight:600;font-size:.95rem}
+.cta-row{display:flex;gap:1rem}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:var(--white);padding:.9rem 1.2rem;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 8px 30px rgba(123,60,255,0.12)}
+.btn-ghost{border:1px solid rgba(255,255,255,0.06);color:var(--white);padding:.7rem 1rem;border-radius:8px;text-decoration:none}
+.btn-outline{border:1px solid rgba(255,255,255,0.08);padding:.5rem .9rem;border-radius:8px;color:var(--white);text-decoration:none}
+
+/* hero visual */
+.hero-visual{display:flex;justify-content:center}
+.hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:16px;padding:8px;box-shadow:0 30px 60px rgba(0,0,0,0.6)}
+.hero-card img{width:100%;height:100%;max-height:420px;object-fit:cover;border-radius:10px;display:block}
+
+/* Sections */
+.section{padding:4rem 0}
+.section-dark{background:linear-gradient(180deg, rgba(8,8,9,0.6), rgba(6,6,7,0.8));border-top:1px solid rgba(255,255,255,0.02)}
+.section h2{color:var(--white);font-family:'Oswald',sans-serif;margin-bottom:.6rem}
+.section-lead{color:var(--muted);margin-bottom:1.4rem}
+
+/* Plans */
+.plans-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.plan-card{background:var(--card);padding:1.6rem;border-radius:14px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 18px 40px rgba(0,0,0,0.6)}
+.plan-card.featured{transform:translateY(-10px);border:1px solid rgba(123,60,255,0.18);box-shadow:0 24px 50px rgba(123,60,255,0.06)}
+.plan-badge{background:rgba(255,255,255,0.04);display:inline-block;padding:.4rem .7rem;border-radius:999px;color:var(--muted);font-weight:700;margin-bottom:.6rem}
+.price{font-size:1.6rem;color:var(--white);font-weight:800;margin:.6rem 0}
+
+/* Specials */
+.special-pricing{margin-top:1.4rem;background:linear-gradient(90deg, rgba(123,60,255,0.03), rgba(94,27,216,0.02));padding:1rem;border-radius:10px}
+.special-list{display:flex;gap:1rem;margin-top:.6rem}
+.special-list .item{background:rgba(255,255,255,0.03);padding:.6rem .8rem;border-radius:8px;color:var(--muted)}
+
+/* Classes */
+.classes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.class-card{background:var(--card);border-radius:12px;padding:0;overflow:hidden;color:var(--muted)}
+.class-card img{width:100%;height:180px;object-fit:cover;display:block}
+.class-card h3{color:var(--white);margin:1rem}
+.class-card p{padding:0 1rem 1rem 1rem}
+
+/* Trainers */
+.trainers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.trainer-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:1rem;border-radius:12px;text-align:center}
+.trainer-card img{width:100%;height:200px;object-fit:cover;border-radius:8px;display:block;margin-bottom:.8rem}
+.trainer-card h3{color:var(--white);margin-bottom:.3rem}
+
+/* Shop */
+.shop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.product img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:.6rem}
+.prod-price{color:var(--white);font-weight:700}
+
+/* Location */
+.location-grid{display:grid;grid-template-columns:1fr 420px;gap:1.6rem;align-items:center}
+.map-placeholder img{width:100%;border-radius:12px;display:block}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 360px;gap:1.4rem}
+.contact-form{background:var(--card);padding:1rem;border-radius:12px}
+.contact-form label{display:block;color:var(--muted);font-weight:600;margin-bottom:.8rem}
+.contact-form input,.contact-form textarea{width:100%;padding:.7rem;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--white)}
+.form-row{display:flex;gap:.8rem;margin-top:.8rem}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:1.2rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;color:var(--muted)}
+
+/* Responsividade */
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr}
+  .plans-grid,.classes-grid,.trainers-grid,.shop-grid{grid-template-columns:repeat(2,1fr)}
+  .mobile-menu-toggle{display:block}
+  .main-nav{display:none}
+}
+@media (max-width:680px){
+  .plans-grid,.classes-grid,.trainers-grid,.shop-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .location-grid{grid-template-columns:1fr}
+  .hero-content h1{font-size:2.2rem}
+}
+CSS
+
+cat > "$WORKDIR/script.js" <<'JS'
+// Interações simples: formulário, ano dinâmico e ações de menu
+document.addEventListener('DOMContentLoaded', function(){
+  // Ano do rodapé
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Simples submit: mostrar alerta (substituir por integração real)
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = form.elements['name'].value;
+    alert('Obrigado, ' + name + '! Sua mensagem foi enviada. Entraremos em contato em breve.');
+    form.reset();
+  });
+
+  // Mobile menu toggle
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const nav = document.querySelector('.main-nav');
+  toggle && toggle.addEventListener('click', () => {
+    if(nav.style.display === 'flex') nav.style.display = 'none';
+    else nav.style.display = 'flex';
+  });
+});
+
+// Função auxiliar para agendar visita (exibir modal ou redirecionar)
+function bookVisit(){
+  alert('Obrigado! Nossa equipe entrará em contato para confirmar sua visita.');
+}
+JS
+
+cat > "$WORKDIR/README.md" <<'MD'
+# Spartan Gym — Site estático
+
+Arquivos incluídos:
+- index.html
+- styles.css
+- script.js
+- assets/
+  - hero-1.jpg   (imagem 3 - esteira)
+  - natacao.jpg  (imagem 2 - natação)
+  - product-1.jpg (imagem 1 - suplemento)
+  - map-placeholder.png (imagem genérica de mapa)
+- robots.txt
+- CNAME
+
+Como usar:
+1. Coloque as imagens enviadas na pasta `assets/` com os nomes indicados acima.
+2. Abra `index.html` no navegador para testar localmente.
+3. Para publicar: suba todos os arquivos para GitHub Pages, Netlify, Vercel, ou outro host estático.
+   - GitHub Pages: crie um repositório, faça commit dos arquivos e ative Pages.
+   - Netlify/Vercel: arraste a pasta para fazer o deploy ou conecte ao repositório.
+4. Integrações recomendadas:
+   - Substituir o `alert()` do formulário por uma chamada ao seu backend (/api/contact) ou usar um serviço como Formspree/Zapier.
+   - Integrar Google Maps na seção de localização (substituir map-placeholder.png por iframe).
+   - Para vendas, integrar Stripe/PagSeguro ou criar páginas de produto com checkout.
+
+Contato usado no site:
+- Telefone: (19) 99999-9999
+- Email: contato@spartangym.com
+MD
+
+cat > "$WORKDIR/robots.txt" <<'TXT'
+User-agent: *
+Disallow:
+Sitemap: /sitemap.xml
+TXT
+
+cat > "$WORKDIR/CNAME" <<'TXT'
+www.spartangym.com
+TXT
+
+# Gerar um placeholder PNG simples (1x1 transparent) para map-placeholder.png caso o usuário não queira substituir
+# Aqui geramos um PNG base64 e gravamos como arquivo
+MAP_PNG_BASE64="iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAn0B9cGqg1sAAAAASUVORK5CYII="
+echo "$MAP_PNG_BASE64" | base64 --decode > "$WORKDIR/assets/map-placeholder.png"
+
