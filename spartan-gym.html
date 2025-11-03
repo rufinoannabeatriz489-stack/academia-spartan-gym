@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spartan Gym - Conquiste Seu Império</title>
+    <style>
+        :root {
+            --primary-black: #0a0a0a;
+            --secondary-black: #1a1a1a;
+            --accent-purple: #6a0dad;
+            --light-purple: #8a2be2;
+            --white: #ffffff;
+            --gray: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--primary-black);
+            color: var(--white);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(to bottom, var(--primary-black), var(--secondary-black));
+            padding: 20px 0;
+            border-bottom: 2px solid var(--accent-purple);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 10px var(--accent-purple);
+        }
+        
+        .logo span {
+            color: var(--accent-purple);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--accent-purple);
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            width: 100%;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 15px var(--accent-purple);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #ddd;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-purple);
+            color: var(--white);
+            padding: 15px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--light-purple);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(106, 13, 173, 0.3);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background-color: var(--secondary-black);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background-color: var(--accent-purple);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .service-card {
+            background-color: var(--primary-black);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            height: 200px;
+            background-color: var(--accent-purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        
+        .service-content {
+            padding: 30px;
+        }
+        
+        .service-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+        
+        .service-content p {
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+        
+        /* Plans Section */
+        .plans {
+            padding: 100px 0;
+            background-color: var(--primary-black);
+        }
+        
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .plan-card {
+            background-color: var(--secondary-black);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .plan-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 40px rgba(106, 13, 173, 0.2);
+        }
+        
+        .plan-header {
+            background-color: var(--accent-purple);
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        
+        .plan-price {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        
+        .plan-features {
+            padding: 30px;
+        }
+        
+        .plan-features ul {
+            list-style: none;
+        }
+        
+        .plan-features ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--gray);
+            position: relative;
+            padding-left: 30px;
+        }
+        
+        .plan-features ul li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-purple);
+            font-weight: bold;
+        }
+        
+        .plan-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: var(--accent-purple);
+            color: var(--white);
+            border: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .plan-button:hover {
+            background-color: var(--light-purple);
+        }
+        
+        /* Classes Section */
+        .classes {
+            padding: 100px 0;
+            background-color: var(--secondary-black);
+        }
+        
+        .classes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .class-card {
+            background-color: var(--primary-black);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .class-image {
+            height: 200px;
+            background-color: var(--gray);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .class-content {
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .class-name {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--white);
+        }
+        
+        .class-price {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        /* Location Section */
+        .location {
+            padding: 100px 0;
+            background-color: var(--primary-black);
+        }
+        
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .location-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .location-info p {
+            color: #bbb;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .map-placeholder {
+            height: 400px;
+            background-color: var(--gray);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 1.2rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary-black);
+            padding: 50px 0 20px;
+            border-top: 2px solid var(--accent-purple);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--accent-purple);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid var(--gray);
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .location-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">SPARTAN <span>GYM</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#classes">Aulas</a></li>
+                    <li><a href="#location">Localização</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Conquiste Seu Império</h1>
+            <p>Na Spartan Gym, oferecemos treinamento personalizado, aulas especiais e produtos de qualidade para ajudar você a alcançar seus objetivos fitness.</p>
+            <a href="#plans" class="cta-button">Comece Agora</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">💪</div>
+                    <div class="service-content">
+                        <h3>Personal Trainers</h3>
+                        <p>Acompanhamento personalizado com treinos exclusivos considerando suas metas, limitações e preferências.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛍️</div>
+                    <div class="service-content">
+                        <h3>Produtos de Terceiros</h3>
+                        <p>Espaço dedicado para venda de produtos de qualidade de terceiros, como suplementos e equipamentos.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏊</div>
+                    <div class="service-content">
+                        <h3>Aulas Especiais</h3>
+                        <p>Oferecemos aulas de natação, pilates e fit dance para diversificar seu treino e alcançar melhores resultados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section class="plans" id="plans">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Planos</h2>
+            </div>
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <div class="plan-name">Básico</div>
+                        <div class="plan-price">R$ 100</div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>Acesso à academia</li>
+                            <li>Direito a personal trainer</li>
+                            <li>Treino individualizado</li>
+                        </ul>
+                    </div>
+                    <button class="plan-button">Escolher Plano</button>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <div class="plan-name">Intermediário</div>
+                        <div class="plan-price">R$ 175</div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>Todos os benefícios do plano básico</li>
+                            <li>Direito a uma aula especial (pilates ou fit-dance)</li>
+                            <li>Acompanhamento online</li>
+                        </ul>
+                    </div>
+                    <button class="plan-button">Escolher Plano</button>
+                </div>
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <div class="plan-name">Premium</div>
+                        <div class="plan-price">R$ 300</div>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>Todos os benefícios do plano intermediário</li>
+                            <li>Consulta com nutricionista</li>
+                            <li>Dieta personalizada</li>
+                            <li>Acesso a todas as aulas especiais</li>
+                        </ul>
+                    </div>
+                    <button class="plan-button">Escolher Plano</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="classes" id="classes">
+        <div class="container">
+            <div class="section-title">
+                <h2>Aulas Especiais</h2>
+            </div>
+            <div class="classes-grid">
+                <div class="class-card">
+                    <div class="class-image" style="background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="class-content">
+                        <h3 class="class-name">Pilates</h3>
+                        <div class="class-price">R$ 100</div>
+                        <p>Melhore sua postura, flexibilidade e força com nossas aulas de pilates.</p>
+                    </div>
+                </div>
+                <div class="class-card">
+                    <div class="class-image" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="class-content">
+                        <h3 class="class-name">Fit Dance</h3>
+                        <div class="class-price">R$ 100</div>
+                        <p>Queime calorias de forma divertida com nossas aulas de dança fitness.</p>
+                    </div>
+                </div>
+                <div class="class-card">
+                    <div class="class-image" style="background-image: url('https://images.unsplash.com/photo-1560090995-01632a28895b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="class-content">
+                        <h3 class="class-name">Natação</h3>
+                        <div class="class-price">R$ 170</div>
+                        <p>Exercite-se de forma completa com nossas aulas de natação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossa Localização</h2>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Venha nos visitar</h3>
+                    <p>Estamos localizados em um ponto estratégico para atender você da melhor forma possível.</p>
+                    <p><strong>Endereço:</strong> Rua Fernandes Campelo Araújo - João Aranha – SP</p>
+                    <p><strong>Horário de funcionamento:</strong> Segunda a Sexta: 5h às 23h | Sábado: 6h às 20h | Domingo: 8h às 16h</p>
+                </div>
+                <div class="map-placeholder">
+                    [MAPPA - LOCALIZAÇÃO DA ACADEMIA]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Spartan Gym</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#plans">Planos</a></li>
+                        <li><a href="#classes">Aulas</a></li>
+                        <li><a href="#location">Localização</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>Telefone: (11) 99999-9999</li>
+                        <li>Email: contato@spartangym.com</li>
+                        <li>Endereço: Rua Fernandes Campelo Araújo - João Aranha – SP</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Spartan Gym. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
